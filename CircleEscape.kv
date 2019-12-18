@@ -1,0 +1,83 @@
+#:kivy 1.10.0
+
+<Circle1>:
+    size: 200, 200
+    col: 0.15, 0.15, 0.15
+    canvas:
+        Color:
+            rgb: self.col
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+
+<Circle2>:
+    size: 160, 160
+    col: 0.15, 0.15, 0.15
+    canvas:
+        Color:
+            rgb: self.col
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+
+<Circle3>:
+    size: 120, 120
+    col: 0.15, 0.15, 0.15
+    canvas:
+        Color:
+            rgb: self.col
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+
+<Circle4>:
+    size: 80, 80
+    col: 0.15, 0.15, 0.15
+    canvas:
+        Color:
+            rgb: self.col
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+
+<Background>:
+    col: 0.75, 0.75, 0.75
+    canvas:
+        Color:
+            rgb: self.col
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<Arena>:
+    circle1: esc_circle1
+    circle2: esc_circle2
+    circle3: esc_circle3
+    circle4: esc_circle4
+    background: back
+
+    Background:
+        id: back
+        pos: 0,0
+        size: self.parent.width, self.parent.height
+
+    Circle1:
+        id: esc_circle1
+        center: self.parent.center
+
+    Circle2:
+        id: esc_circle2
+        center: self.parent.center
+
+    Circle3:
+        id: esc_circle3
+        center: self.parent.center
+
+    Circle4:
+        id: esc_circle4
+        center: self.parent.center
